@@ -18,7 +18,7 @@ router.get('/google',passport.authenticate("google",{
 
 // callback route for google to redict ;
 
-router.get('/google/redirect',(req,res)=>{
+router.get('/google/redirect',passport.authenticate('google'),(req,res)=>{
  res.send("you reached the call back URL")   
 })
 

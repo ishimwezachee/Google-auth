@@ -7,7 +7,8 @@ passport.use(
     callbackURL:"/auth/google/redirect",
     clientID:Keys.google.clientID,
     clientSecret:Keys.google.clientSecret
-},()=>{
+},(accessToken,refreshToken,profile,done)=>{
     // passport callback function 
+   console.log(profile)
 })
 )
