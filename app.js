@@ -26,7 +26,8 @@ app.use("/auth",authRoutes);
 app.use('/profile',profileRoutes)
 // create home route 
 app.get('/',(req,res)=>{
-res.render('home');
+    // So that i can acces the codes 
+res.render('home',{user:req.user});
 })
 
 
