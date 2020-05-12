@@ -1,0 +1,23 @@
+{
+  "name": "google-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+  "start":"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishimwezachee/Google-auth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ishimwezachee/Google-auth/issues"
+  },
+  "homepage": "https://github.com/ishimwezachee/Google-auth#readme",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1"
+  }
+}
