@@ -11,15 +11,18 @@ router.get('/logout',(req,res)=>{
 })
 
 
-// auth with google 
+// auth with google under help of passport 
 router.get('/google',passport.authenticate("google",{
+    // this is what we want to retrieve 
     scope:['profile']
 }))
 
-// callback route for google to redict ;
+// callback route for google to redrect  ;
+// exchange code ofr profile info 
 
 router.get('/google/redirect',passport.authenticate('google'),(req,res)=>{
- res.send("you reached the call back URL")   
+//  res.send(req.user)   
+res.redirect('/profile/')
 })
 
 module.exports = router;
